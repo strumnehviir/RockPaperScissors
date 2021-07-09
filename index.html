@@ -2,10 +2,51 @@
 <html>
     <head>
         <title>
-            Rock Paper Scissors
+            StrumNehViir's Rock Paper Scissors
         </title>
+        <link rel="stylesheet" href="rps.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
     </head>
     <body>
+        <div id = "container">
+            <div id = "title-area">
+                <div id = 'title' ><H2>ROCK PAPER SCISSORS</H2></div>
+            </div>
+            <div id= "button-area">
+                <div id="rock" class= "btns"><img id = "rock-img" class = "image" src="pngwing.com.png"></div>
+                <div id="paper" class= "btns"><img id = "paper-img"class = "image" src="paper.png"></div>
+                <div id="scissors" class= "btns"><img id = "scissors-img" class = "image" src="scissors.png"></div>
+            </div>
+            <div id = "win-area">
+                <div id = "computer-score">
+                    <div id = "scores">
+                        <div id= "cscore" class = "scoring">
+                            <p class = "insidebox" >Computer scored:</p>
+                            <p class = "insidebox"  id ="computers-score">0</p>
+                        </div>
+                        <div id= "pscore" class = "scoring">
+                            <p class = "insidebox"> You Scored:</p>
+                            <p class = "insidebox"id = "player-score">0</p>
+                        </div>
+                    </div>
+                    <div id = "computers-choice">
+                        <p>Computer Chose: </p>
+                        <p id = "cchoice"></p>
+                    </div>
+                </div>
+                <div id = "message-reset">
+                    <div id = "message"><p id = "messages"></p></div>
+                    <div id = "reset"><img  id = "restart" src="restart.png"></div>
+                </div>
+            </div>
+            <div id = "footer-area">
+                <div id = "footer"><p>Designed by StrumNehViir</p></div>
+            </div>
+
+        </div>
         <script src = "RockPaperScissors.js"></script>
     </body>
 </html>

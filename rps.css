@@ -1,0 +1,232 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#container{
+    height: 100vh;
+    max-height:100%;
+    width: 100vw;
+    max-width: 100%;
+    background-color:#333333 ;
+    display: grid;
+    grid-template-areas:"title title title"
+                        "button win win"
+                        "button win win"
+                        "footer footer footer";
+                    
+}
+
+#button-area{
+    height: auto;
+    width: 33.3vw;
+    grid-area: button;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}   
+
+.btns{
+    width: 85px;
+    height: 60px;
+    transform: skew(20deg);
+    margin-bottom: 20px;
+    margin-left : 60px;
+    box-shadow: 10px 10px;
+    background: #009b9b;
+    border-width: 3px;
+    border-style: solid;
+
+
+}
+
+.btns:hover{
+    transform: scale(1.1) skew(20deg);
+    border-width: 5px;
+    border-style: solid;
+    background-color: #9b0000;
+    
+}
+
+.image{
+    width: 85px;
+    height: 65px;
+}
+
+#title-area{
+    grid-area: title;
+    width: 100vw;
+    height: auto;
+    max-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#title{
+    margin-top: 20px;
+    width: 80vw;
+    height: 80px;
+    transform: skew(20deg);
+    background: #009b9b;
+    box-shadow: 20px 20px;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#win-area{
+    grid-area: win;
+    width: 50vw;
+    height: auto;
+    background: #009b9b;
+    box-shadow:30px 30px;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-area{
+    grid-area: footer;
+    width: 100vw;
+    height: auto;
+    max-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+
+}
+#footer{
+    margin-top: 20px;
+    width: 80vw;
+    height: 80px;
+    transform: skew(20deg);
+    background: #009b9b;
+    box-shadow: 20px 20px;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#computer-score{
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#scores{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color:#333333;
+    margin-top: 20px;
+    border-width:5px;  
+    border-style:solid;
+    border-style: solid;
+    border-top-color: black;
+    border-left-color: black;
+    border-right-color: #3c3c3c;
+    border-bottom-color: #3c3c3c;
+    color:#00e8e8;
+    font-size: 65%;
+    margin-right: 10px;
+    text-shadow: 2px 2px #003737;
+}
+#computers-choice{
+    width: 50%;
+    height: 50%;
+    background-color:#333333;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-width:5px;  
+    border-style:solid;
+    border-top-color: black;
+    border-left-color: black;
+    border-right-color: #3c3c3c;
+    border-bottom-color: #3c3c3c;
+    color:#00e8e8;
+    font-size: 95%;
+    text-shadow: 2px 2px #003737;
+}
+
+#message-reset{
+    height: 40%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#message{
+    height: 70%;
+    width: 80%;
+    border-width:5px;  
+    border-style:solid;
+    background-color:#333333;
+    border-top-color: black;
+    border-left-color: black;
+    border-right-color: #3c3c3c;
+    border-bottom-color: #3c3c3c;
+    color:#00e8e8;
+    font-size: 85%;
+    text-shadow: 2px 2px #003737;
+}
+
+#reset{
+    height: 20%;
+    width: 40%;
+    width: 85px;
+    height: 60px;
+    transform: skew(20deg);
+    box-shadow: 10px 10px;
+    background: #9b0000;
+    border-width: 3px;
+    border-style: solid;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#reset:hover{
+    transform: scale(1.1) skew(20deg);
+    border-width: 5px;
+    border-style: solid;
+    background-color: #009b9b;
+}
+
+#restart{
+    height: 100%;
+    width: 100%;
+}
+
+.scoring{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 2px;
+    margin-right: 2px;   
+}
+.insidebox{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    text-justify: newspaper;
+}
